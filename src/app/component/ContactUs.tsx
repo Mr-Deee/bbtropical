@@ -3,17 +3,17 @@
 import { useEffect, useRef } from "react";
 import { useScroll } from "../ScrollProvider";
 
-export default function Portfolio() {
+export default function ContactUs() {
   const ref = useRef<HTMLElement | null>(null);
   const { register } = useScroll();
 
   useEffect(() => {
-    register("projects", ref.current);
+    register("ContactUs", ref.current);
   }, []);
 
   return (
     <section ref={ref} className="section">
-      <h2>projects</h2>
+      <h2>ContactUs</h2>
     </section>
   );
 }

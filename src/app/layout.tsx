@@ -1,36 +1,20 @@
 // app/layout.tsx
-"use client";
+import { ScrollProvider } from "./ScrollProvider";
+import Navbar from "./component/Navbar";
 
-import { ScrollProvider, useScroll } from "./ScrollProvider";
-import { SECTIONS } from "./sections";
-import "./globals.css";
-
-function Navbar() {
-  const { scrollTo } = useScroll();
-
-  return (
-    <nav className="navbar">
-      <img src="/images/logo.png" />
-      <ul>
-        {SECTIONS.map(s => (
-          <li key={s.id}>
-            <button onClick={() => scrollTo(s.id)}>
-              {s.id.toUpperCase()}
-            </button>
-          </li>
-        ))}
-      </ul>
-    </nav>
-  );
-}
+import "./globals.css"; // your global CSS
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html>
+    <html lang="en">
       <body>
         <ScrollProvider>
+        <Navbar />
+
           {children}
-        </ScrollProvider>
+          
+          
+          </ScrollProvider>
       </body>
     </html>
   );

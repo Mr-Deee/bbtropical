@@ -2,14 +2,14 @@
 
 import Landing from "./component/Landing";
 import Portfolio from "./component/portfolio";
-import Projects from "./component/projects";
+import ContactUs from "./component/ContactUs";
 
 export default function Page() {
   return (
     <>
       <Landing />
       <Portfolio />
-      <Projects />
+      <ContactUs />
     </>
   );
 }

@@ -1,4 +1,3 @@
-// app/ScrollProvider.tsx
 "use client";
 
 import { createContext, useContext, useRef } from "react";
@@ -18,7 +17,12 @@ export function ScrollProvider({ children }: { children: React.ReactNode }) {
   };
 
   const scrollTo = (id: string) => {
-    sections.current[id]?.scrollIntoView({ behavior: "smooth" });
+    const el = sections.current[id];
+    if (el) {
+      const yOffset = -80; // adjust if navbar height
+      const y = el.getBoundingClientRect().top + window.scrollY + yOffset;
+      window.scrollTo({ top: y, behavior: "smooth" });
+    }
   };
 
   return (
