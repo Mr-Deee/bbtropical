@@ -7,6 +7,32 @@ import { useScroll } from "../ScrollProvider";
 
 const Portfolioprojects = [
   {
+    title: "Import Of Building And Electrical Materials ",
+    description: "We provide world class building materials.",
+    details:
+      "We supply cement, steel, aggregates, and premium construction materials across the country.",
+    images: [
+      "/images/elect.jpg",
+      "/images/buildingsupplies2.jpg",
+      "/images/buildingsupplies3.jpg",
+    ],
+  },
+
+
+  {
+    title: "Archetectural Drawings",
+    description: "Highly Trained visionary archetects for your architectural drawings.",
+    details:
+      "We supply cement, steel, aggregates, and premium construction materials across the country.",
+    images: [
+      "/images/Archetectural Drawing.jpg",
+      "/images/Ach2.jpg",
+      "/images/buildingsupplies3.jpg",
+    ],
+  },
+
+
+  {
     title: "Supply Of Building Materials",
     description: "We provide world class building materials.",
     details:
