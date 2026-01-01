@@ -13,8 +13,8 @@ const Portfolioprojects = [
       "We supply cement, steel, aggregates, and premium construction materials across the country.",
     images: [
       "/images/elect.jpg",
-      "/images/buildingsupplies2.jpg",
-      "/images/buildingsupplies3.jpg",
+      "/images/buildingMaterials4.jpg",
+      "/images/electricalMaterials1.jpg",
     ],
   },
 
@@ -27,7 +27,7 @@ const Portfolioprojects = [
     images: [
       "/images/Archetectural Drawing.jpg",
       "/images/Ach2.jpg",
-      "/images/buildingsupplies3.jpg",
+      "/images/ArchitecturalDrawings4.jpg",
     ],
   },
 
@@ -39,8 +39,8 @@ const Portfolioprojects = [
       "We supply cement, steel, aggregates, and premium construction materials across the country.",
     images: [
       "/images/buildingsupplies.jpg",
-      "/images/buildingsupplies2.jpg",
-      "/images/buildingsupplies3.jpg",
+      "/images/buildingMaterials4.jpg",
+      "/images/woodplanks.jpg",
     ],
   },
   {
@@ -48,14 +48,14 @@ const Portfolioprojects = [
     description: "We build state of the art roads and buildings.",
     details:
       "Our construction projects meet international safety and durability standards.",
-    images: ["/images/robcons.jpg", "/images/robcons2.jpg"],
+    images: ["/images/robcons.jpg", "/images/construction.jpg"],
   },
   {
     title: "Electrical And Civil Engineering",
     description: "A responsive project built with modern tech.",
     details:
       "We handle electrical installations, civil works, and infrastructure projects.",
-    images: ["/images/EC.jpg", "/images/EC2.jpg"],
+    images: ["/images/EC.jpg", "/images/electricalEngineering.jpg"],
   },
 ];
 
@@ -158,12 +158,13 @@ export default function Portfolio() {
               <p>{activeProject.details}</p>
 
               <div className={Style.dots}>
-                {activeProject.images.map((_: any, i: number) => (
-                  <span
-                    key={i}
-                    className={i === imageIndex ? Style.activeDot : ""}
-                  />
-                ))}
+              {activeProject.images.map((_: any, i: number) => (
+               <button
+                   key={i}
+                  className={`${Style.dot} ${i === imageIndex ? Style.activeDot : ""}`}
+                   onClick={() => setImageIndex(i)}
+                   />
+                 ))}
               </div>
             </div>
           </div>

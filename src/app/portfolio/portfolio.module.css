@@ -180,11 +180,13 @@
 .modalContent h3 {
   font-size: 1.4rem;
   margin-bottom: 10px;
+  color: black;
 }
 
 .modalContent p {
   font-size: 0.95rem;
   line-height: 1.5;
+  color: black;
 }
 
 /* Dots */
@@ -195,13 +197,16 @@
   gap: 6px;
 }
 
-.dots span {
-  width: 8px;
-  height: 8px;
+.dot {
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
-  background: #ccc;
+  background: gray;
+  border: none;
+  margin: 5px;
+  cursor: pointer;
 }
 
 .activeDot {
-  background: #000;
+  background: black;
 }
