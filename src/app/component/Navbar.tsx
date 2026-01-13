@@ -18,12 +18,15 @@ export default function Navbar() {
       <div className={styles.logo}>
         <img src="/images/logo.png" alt="Logo" />
       </div>
-
+     
       <ul className={`${styles.links} ${open ? styles.active : ""}`}>
+
         <li onClick={() => handleScroll("home")}>Home</li>
         <li onClick={() => handleScroll("portfolio1")}>Portfolio</li>
         <li onClick={() => handleScroll("ContactUs")}>ContactUs</li>
+  
       </ul>
+      
 
       <div
         className={styles.menuToggle}

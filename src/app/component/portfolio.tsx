@@ -20,7 +20,7 @@ const Portfolioprojects = [
 
 
   {
-    title: "Archetectural Drawings",
+    title: "Architectural Drawings",
     description: "Highly Trained visionary archetects for your architectural drawings.",
     details:
       "We supply cement, steel, aggregates, and premium construction materials across the country.",
